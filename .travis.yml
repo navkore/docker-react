@@ -4,7 +4,7 @@ services:
 
 
 before_install:
-  - docker buils -t navkore/docker-react -f Dockerfile.dev .
+  - docker build -t navkore/docker-react -f Dockerfile.dev .
 
 script:
   - docker run navkore/docker-react npm run test -- --coverage
