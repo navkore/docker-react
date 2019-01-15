@@ -8,4 +8,5 @@ before_install:
 
 script:
   - docker run navkore/docker-react npm run test -- --coverage
+
   
