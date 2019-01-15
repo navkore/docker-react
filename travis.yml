@@ -1,0 +1,11 @@
+sudo: required
+services:
+  - docker
+
+
+before_install:
+  - docker buils -t navkore/docker-react -f Dockerfile.dev .
+
+script:
+  - docker run navkore/docker-react npm run test -- --coverage
+  
